@@ -1,0 +1,267 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fade-in for the entire page */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Slide-up animation for sections */
+@keyframes slideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Body and Base Typography */
+body {
+    font-family: 'Montserrat', Arial, sans-serif;
+    background-color: #f5f7fa;
+    color: #333333;
+    line-height: 1.6;
+    animation: fadeIn 1s ease-out forwards;
+}
+
+/* Links */
+a {
+    color: #2a79c7;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #1d5d91;
+    text-decoration: underline;
+}
+
+/* Header & Navigation */
+header {
+    background: linear-gradient(90deg, rgba(1, 87, 152, 1) 0%, rgba(255, 255, 255, 1) 100%);
+    padding: 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    color: white;
+    text-shadow: white 0px 0px 20px;
+    animation: none;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+nav a {
+    color: white;
+    text-shadow: black 0px 0px 10px;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, transform 0.3s ease, color 0.3s ease-in-out;
+}
+
+nav a:hover {
+    background-color: #e5effb;
+    /* Slight hover highlight */
+    transform: translateY(-2px);
+    /* Upward shift on hover */
+}
+
+/* Hero / Intro Section */
+.hero {
+    text-align: center;
+    padding: 2rem 1rem;
+    animation: slideUp 1.2s ease-out forwards;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+}
+
+.hero img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hero img:hover {
+    transform: scale(1.05);
+    box-shadow: white 0px 0px 10px;
+}
+
+/* Sections */
+section {
+    padding: 2rem 1rem;
+    max-width: 900px;
+    margin: 0 auto;
+    animation: slideUp 0.8s ease-out forwards;
+}
+
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    position: relative;
+    color: #2a79c7;
+}
+
+section h2::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 3px;
+    background-color: #2a79c7;
+    margin-top: 0.5rem;
+}
+
+/* About Me */
+#about p {
+    margin-bottom: 1rem;
+}
+
+/* Skills */
+#skills ul {
+    list-style: disc inside;
+    padding-left: 0;
+    margin-top: 1rem;
+    animation: fadeIn 1s ease-out forwards;
+}
+
+/* Projects */
+#projects .project {
+    background-color: #ffffff;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#projects .project:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+#projects .project h3 {
+    margin-bottom: 0.5rem;
+    color: #2a79c7;
+}
+
+#projects .project a {
+    font-weight: 600;
+}
+
+/* Experience / Education */
+.job,
+.school {
+    background-color: #ffffff;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.job:hover,
+.school:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.job h3,
+.school h3 {
+    margin-bottom: 0.5rem;
+    color: #2a79c7;
+}
+
+/* Contact Section */
+#contact p,
+#contact form {
+    margin-bottom: 1rem;
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+}
+
+#contact form label {
+    margin-bottom: 0.25rem;
+    font-weight: 600;
+}
+
+#contact form input,
+#contact form textarea {
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#contact form button {
+    cursor: pointer;
+    padding: 0.75rem 1rem;
+    border: none;
+    border-radius: 4px;
+    background-color: #2a79c7;
+    color: #ffffff;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#contact form button:hover {
+    background-color: #1d5d91;
+    transform: translateY(-2px);
+}
+
+/* Resume Section */
+#resume a {
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    background-color: #2a79c7;
+    color: #ffffff;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#resume a:hover {
+    background-color: #1d5d91;
+    transform: translateY(-2px);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #ffffff;
+    color: #333333;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s 0.5s ease-out forwards;
+}
