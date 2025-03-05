@@ -311,3 +311,6 @@ footer {
     visibility: visible;
     transform: translateX(-50%) translateY(-30px);
 }
+.rainbow-hyperlink{
+    animation: rainbowWave 2.5s infinite linear;
+}
