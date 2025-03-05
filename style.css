@@ -31,6 +31,21 @@
     }
 }
 
+/* Pretty self-explanatory */
+@keyframes rainbowWave{
+    0% { color: rgba(255,0,0,1); text-shadow: rgba(255,0,0,1) 0px 0px 10px; }
+    10% { color: rgba(255,154,0,1); text-shadow: rgba(255,154,0,1) 0px 0px 10px; }
+    20% { color: rgba(208,222,33,1); text-shadow: rgba(208,222,33,1) 0px 0px 10px; }
+    30% { color: rgba(79,220,74,1); text-shadow: rgba(79,220,74,1) 0px 0px 10px; }
+    40% { color: rgba(63,218,216,1); text-shadow: rgba(63,218,216,1) 0px 0px 10px; }
+    50% { color: rgba(47,201,226,1); text-shadow: rgba(47,201,226,1) 0px 0px 10px; }
+    60% { color: rgba(28,127,238,1); text-shadow: rgba(28,127,238,1) 0px 0px 10px; }
+    70% { color: rgba(95,21,242,1); text-shadow: rgba(95,21,242,1) 0px 0px 10px; }
+    80% { color: rgba(186,12,248,1); text-shadow: rgba(186,12,248,1) 0px 0px 10px; }
+    90% { color: rgba(251,7,217,1); text-shadow: rgba(251,7,217,1) 0px 0px 10px; }
+    100% { color: rgba(255,0,0,1); text-shadow: rgba(255,0,0,1) 0px 0px 10px; }
+}
+
 /* Body and Base Typography */
 body {
     font-family: 'Montserrat', Arial, sans-serif;
