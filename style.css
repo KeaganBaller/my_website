@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+/* Animations section */
 /* Fade-in for the entire page */
 @keyframes fadeIn {
     from {
@@ -45,6 +46,7 @@
     100% { color: rgba(255,0,0,1); text-shadow: rgba(255,0,0,1) 0px 0px 10px; }
 }
 
+/* Design section */
 /* Body and Base Typography */
 body {
     font-family: 'Montserrat', Arial, sans-serif;
@@ -93,9 +95,7 @@ nav a {
 
 nav a:hover {
     background-color: #e5effb;
-    /* Slight hover highlight */
     transform: translateY(-2px);
-    /* Upward shift on hover */
 }
 
 /* Hero / Intro Section */
@@ -291,11 +291,13 @@ footer {
     position: absolute;
     top: 0;
     left: 50%;
-    transform: translateX(-50%) translateY(-10px);
+    transform: translateX(-50%) translateY(-10px) scale(0.6);
     width: 25px;
     height: 25px;
     background-size: contain;
     background-color: #f5f7fa;
+    box-shadow: #f5f7fa 0px 0px 5px,
+                #f5f7fa 0px 0px 10px;
     background-repeat: no-repeat;
     background-position: center;
     border-radius: 5px;
@@ -309,8 +311,15 @@ footer {
 .hover-image:hover .hover-image-bubble {
     opacity: 1;
     visibility: visible;
-    transform: translateX(-50%) translateY(-30px);
+    transform: translateX(-50%) translateY(-30px) scale(1);
 }
 .rainbow-hyperlink{
     animation: rainbowWave 2.5s infinite linear;
 }
+
+/* Mobile device adjustments section */
+@media (max-width: 768px) {
+    nav a {
+      display: none;
+    }
+  }
