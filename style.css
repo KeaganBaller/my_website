@@ -317,6 +317,35 @@ footer {
     animation: rainbowWave 2.5s infinite linear;
 }
 
+.arrow-tooltip {
+    position: fixed;
+    top: 27.6%;
+    left: 49%;
+    font-weight: bold;
+    color: #2a79c7;
+    text-shadow: #98AABD 0px 0px 5px;
+    z-index: 9999;
+    opacity: 0;
+    visibility: hidden;
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+}
+
+.arrow-tooltip .arrow {
+    display: inline-block;
+    width: 0; 
+    height: 0; 
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-right: 8px solid #333;
+    margin-right: 8px;
+}
+
+.visible {
+    opacity: 1;
+    transform: translateX(-10%);
+    visibility: visible;
+}
+
 /* Mobile device adjustments section */
 @media (max-width: 768px) {
     nav a {
