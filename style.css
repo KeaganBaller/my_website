@@ -351,4 +351,7 @@ footer {
     nav a {
       display: none;
     }
+    #hoverArrow {
+        display: none !important;
+    }
   }
