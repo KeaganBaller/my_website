@@ -296,7 +296,7 @@ footer {
     text-decoration: none;
     
 }
-
+/* Programming Logos */
 .hover-image-bubble {
     position: absolute;
     top: 0;
@@ -326,14 +326,14 @@ footer {
 .rainbow-hyperlink{
     animation: rainbowWave 2.5s infinite linear;
 }
-
+/* Pointer to Logos */
 .arrow-tooltip {
     position: fixed;
-    top: 27.6%;
+    top: 51.5rem;
     left: 49%;
     font-weight: bold;
     color: #2a79c7;
-    text-shadow: #98AABD 0px 0px 5px;
+    text-shadow: white 0px 0px 5px;
     z-index: 9999;
     opacity: 0;
     visibility: hidden;
