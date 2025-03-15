@@ -80,7 +80,8 @@ a:hover {
 
 /* Header and Navigation */
 header {
-    background: linear-gradient(90deg, rgba(1, 87, 152, 1) 0%, rgba(255, 255, 255, 1) 100%);
+    /*background: linear-gradient(90deg, rgba(1, 87, 152, 1)rgba(5,110,203,1) 0%, rgba(255, 255, 255, 1) 100%);*/
+    background: linear-gradient(90deg, rgba(42,121,192,1) 40%, rgba(98,58,252,1) 100%);
     padding: 1rem;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     color: white;
@@ -178,6 +179,10 @@ section h2::after {
 
 /* Projects */
 #projects .project {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 1rem; 
     background-color: #ffffff;
     padding: 1rem;
     margin-bottom: 1rem;
@@ -191,6 +196,18 @@ section h2::after {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
+#projects .project .project-text {
+    flex: 1;
+}
+
+#projects .project .project-video {
+    flex: 0 0 auto;
+}
+
+#projects .project-video video {
+    border-radius: 5px;
+}
+
 #projects .project h3 {
     margin-bottom: 0.5rem;
     color: #2a79c7;
@@ -198,6 +215,7 @@ section h2::after {
 
 #projects .project a {
     font-weight: 600;
+
 }
 
 /* Experience / Education */
