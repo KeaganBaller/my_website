@@ -1,3 +1,4 @@
+console.log("Since you're back here, I welcome you to my website. Thank you for checking it out!");
 document.querySelectorAll('.hover-image').forEach(item => {
     const bubble = document.createElement('div');
     bubble.classList.add('hover-image-bubble');
