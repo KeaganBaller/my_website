@@ -17,7 +17,6 @@
         transform: translateY(0);
     }
 }
-
 /* Slide-up animation for sections */
 @keyframes slideUp {
     0% {
@@ -80,7 +79,6 @@ a:hover {
 
 /* Header and Navigation */
 header {
-    /*background: linear-gradient(90deg, rgba(1, 87, 152, 1)rgba(5,110,203,1) 0%, rgba(255, 255, 255, 1) 100%);*/
     background: linear-gradient(90deg, rgba(0,105,184,1) 12%, rgba(0,255,192,1) 100%);
     padding: 1rem;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -88,7 +86,6 @@ header {
     text-shadow: white 0px 0px 20px;
     animation: none;
 }
-
 nav {
     display: flex;
     justify-content: center;
@@ -384,7 +381,12 @@ footer {
         background-attachment: scroll;
       }
       section {
-        padding: 2rem 2rem;
+        padding: 2rem 1rem;
+        text-align: center;
+      }
+      section h2::after {
+        margin-left: auto;
+        margin-right: auto;
       }
     
       header {
@@ -397,5 +399,9 @@ footer {
       }
       #projects .project .project-video {
         display: none;
+      }
+      #contact form {
+        margin-left: auto;
+        margin-right: auto;
       }
   }
