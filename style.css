@@ -81,7 +81,7 @@ a:hover {
 /* Header and Navigation */
 header {
     /*background: linear-gradient(90deg, rgba(1, 87, 152, 1)rgba(5,110,203,1) 0%, rgba(255, 255, 255, 1) 100%);*/
-    background: linear-gradient(90deg, rgba(42,121,192,1) 40%, rgba(98,58,252,1) 100%);
+    background: linear-gradient(90deg, rgba(0,105,184,1) 12%, rgba(0,255,192,1) 100%);
     padding: 1rem;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     color: white;
