@@ -1,3 +1,4 @@
+
 * {
     margin: 0;
     padding: 0;
@@ -392,7 +393,8 @@ footer {
       header {
         background-size: cover;
         background-position: center;
-        background: linear-gradient(90deg, rgba(0,105,184,1) 0%, rgba(0,188,186,1) 100%);
+        background: linear-gradient(90deg, hsla(216, 96%, 56%, 1) 0%, hsla(178, 64%, 65%, 1) 100%);
+        text-shadow: white 0px 0px 50px;
       }
       nav a {
         display: none;
